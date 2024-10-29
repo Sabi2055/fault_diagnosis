@@ -212,7 +212,7 @@ void WriteBenchFile(FILE *fout, NODE *graph, int or_gate_id, int Max2){
     fprintf(fout, "# \n");
     fprintf(fout, "# \n");
     fprintf(fout, "# \n");
-    fprintf(fout, " \n\n");
+    fprintf(fout, "# \n\n");
     for(i=0;i<Max2;i++){
         if(graph[i].Type==INPT){
             fprintf(fout,"INPUT(%d)\n",i);
@@ -251,7 +251,7 @@ void WriteBenchFile(FILE *fout, NODE *graph, int or_gate_id, int Max2){
             //default:
                 //break;
             }
-        temp=temp->id    
+        temp=temp->next  ;  
         }
         
     }
